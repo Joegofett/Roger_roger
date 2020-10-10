@@ -33,4 +33,4 @@ async def on_message(message):
         await message.channel.send("""{}, {}:one:, {}:two:, {}:three:""".format(question, option1, option2, option3 ))
     
 
-client.run('NzYxMzIxMjE5MTU2MzQ0ODcy.X3Y5ow.TqgY1lph0LNWv260oRBS51VV6Ss')
+client.run('')
