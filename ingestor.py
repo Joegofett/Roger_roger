@@ -15,7 +15,7 @@ async def on_message(message):
         How do I do this?
         $poll [Question]\n [Option1], [Option2], [Option3]\n
         Where is my code?
-        github.com/joegofett
+        https://github.com/Joegofett/Roger_roger/tree/master
         """)
 
     if message.content.startswith('$poll %s '.):
