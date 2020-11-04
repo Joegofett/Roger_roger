@@ -55,17 +55,4 @@ client.run('Not today junior')
     #     await message.add_reaction('3️⃣')
     #     return
 
-    #     
-    # if message.content.startswith('$poll'):
-    #     pollCreation = message.content
-    #     question, option1, option2, option3= pollCreation.split(';')
-    #     # Improvement in the future us use a while or a for loop here to pull out all of the options and create variables for them. 
-    #     # for var in poll:
-    #     #   poll.split(':') this is where I'm stuck but will think about it some more. trying to avoid a nested loop  
-        
-
-
-    #     await message.channel.send("""{}, {}:one:, {}:two:, {}:three:""".format(question, option1, option2, option3 ))
-    
-
 
