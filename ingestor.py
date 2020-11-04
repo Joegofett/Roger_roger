@@ -7,51 +7,43 @@ client = discord.Client()
 
 
 
+
 @client.event
 async def on_message(message):
-    #if message.content.startswith('$help'):
-    #    await message.channel.send('Just send something')
-    """
-    organizer.clean.data example below 
 
-    Message: Hello all this is a message 
-
-    final = {0: 'Hello', 1 : 'All', 2 : 'this', 3 : 'is', 4 : 'a', 5 : 'message' }
-
-    """
-
-    mc = message.content
-
-    if mc.startswith('$helpAll'):
+    if message.content.startswith('$helpAll'):
         await message.channel.send("""Roger_roger \n 
          What do I do?
          Currently I make Polls\n
          How do I do this?
-         $poll <Your question: 
+         $poll: <Your question>: (option1) (option2) (option3) (etc) up to 20
          Where is my code?
          https://github.com/Joegofett/Roger_roger/tree/master
          """)
 
 
-    if mc.startswith('$help'):
-        data = mc
+    if message.content.startswith('$help'):
+        data = message.content
         cd   = organizer.clean(data)
         await message.channel.send(f'sending new thing {cd[0]}')
 
 
 
-    if mc.startswith('$poll'):
-        data = mc
-        cd = organizer.question(data)
-        await message.channel.send(f'Question: {cd[2]}')
-
-    discord.Spotify()
-
-
-
+    if message.content.startswith('$poll:'):
+        data       = message.content
+        questionid = organizer.question(data)
+        optiond    = organizer.pollOptions(data)
+        ns         = organizer.pollPrinter(questionid=questionid, optiond=optiond)
+        await message.channel.send(ns)
+        #await message.channel.send()
 
 
-client.run('')
+client.run('Not today junior')
+
+
+
+
+
 
 
 
