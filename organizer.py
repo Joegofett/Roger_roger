@@ -59,6 +59,8 @@ def pollPrinter(questionid, optiond):
     
     
     
-def emojis(new_sentence):
+def emojis(optiond):
+    for x in optiond:
+        y = x + 1
 
-    pass 
+    return y
