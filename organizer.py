@@ -51,14 +51,18 @@ def pollPrinter(questionid, optiond):
     #new_sentence = questionid[1] + options
     old_sentence      = ""
     for x in optiond:
-        old_sentence   += optiond[x] 
+        old_sentence   += ',' + optiond[x]  
         #optionSection = options 
-    new_sentence      = questionid[1] + old_sentence
+    new_sentence      = 'Poll:' + questionid[1]+ ':' + old_sentence
     return new_sentence
     
     
     
     
-def emojis(new_sentence):
-
-    pass 
+def emojis(optiond):
+    for x in optiond:
+        y = x + 1
+    while y > 10:
+        -1
+        
+    return y -1
