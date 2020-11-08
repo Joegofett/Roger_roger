@@ -18,17 +18,6 @@ async def on_message(message):
          https://github.com/Joegofett/Roger_roger/tree/master
          """)
 
-    #TODO Fix this so that it does something. I mean Help all is nice but maybe but
-    if message.content.startswith('$emoji'):
-        data     = message.content
-        #optiond  = organizer.pollOptions(data)
-        await message.add_reaction("one")
-    
-    
-    #    data = message.content
-    #    cd   = organizer.clean(data)
-    #    await message.channel.send(f'sending new thing {cd[0]}')
-
 
 
     if message.content.startswith('$poll:'):
@@ -37,7 +26,6 @@ async def on_message(message):
         optiond    = organizer.pollOptions(data)
         ns         = organizer.pollPrinter(questionid=questionid, optiond=optiond)
         await message.channel.send(ns)
-        #await message.channel.send(          )
 
     if message.author == client.user:
         if message.content.startswith('Roger_roger'):
