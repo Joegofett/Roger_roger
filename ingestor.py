@@ -49,23 +49,23 @@ async def on_message(message):
             if emojiCount == 10:
                 await message.add_reaction('0️⃣')
             elif emojiCount == 9:
-                await message.add_reaction('9️⃣')
+                await message.add_reaction('1️⃣') 
             elif emojiCount == 8:
-                await message.add_reaction('8️⃣')
+                await message.add_reaction('2️⃣')
             elif emojiCount == 7:
-                await message.add_reaction('7️⃣')
+                await message.add_reaction('3️⃣')
             elif emojiCount == 6:
-                await message.add_reaction('6️⃣')
+                await message.add_reaction('4️⃣')
             elif emojiCount == 5:
                 await message.add_reaction('5️⃣')
             elif emojiCount == 4:
-                await message.add_reaction('4️⃣')
+                await message.add_reaction('6️⃣')
             elif emojiCount == 3:
-                await message.add_reaction('3️⃣')       
+                await message.add_reaction('7️⃣')     
             elif emojiCount == 2:
-                await message.add_reaction('2️⃣')
+                await message.add_reaction('8️⃣')
             elif emojiCount == 1:
-                await message.add_reaction('1️⃣') 
+                await message.add_reaction('9️⃣')
             emojiCount = emojiCount - 1 
 
 
