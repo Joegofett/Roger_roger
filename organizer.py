@@ -51,9 +51,10 @@ def pollPrinter(questionid, optiond):
     #new_sentence = questionid[1] + options
     old_sentence      = ""
     for x in optiond:
-        old_sentence   += ',' + optiond[x]  
+        old_sentence   += optiond[x] +","
+        finalquestion = questionid[1].split(',') 
         #optionSection = options 
-    new_sentence      = 'Poll:' + questionid[1]+ ':' + old_sentence
+    new_sentence      = 'Poll:' + finalquestion[0]+ ':' + old_sentence
     return new_sentence
     
     
