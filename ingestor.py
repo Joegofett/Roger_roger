@@ -79,6 +79,7 @@ async def on_message(message):
         await message.add_reaction('🇸')
 
 
+
     if message.content.startswith('$time'):
         await message.channel.send("Free time! What time works best for you to play?(All times Eastern time)")
 
